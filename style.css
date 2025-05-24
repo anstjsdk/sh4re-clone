@@ -1,0 +1,29 @@
+#page-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /*위아래 간견 조절*/
+    padding: 10px 20px;
+}
+.detail {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.share button{
+    border-radius: 25px;
+    padding: 8px;
+    background-color:white;
+    padding: 8px 20px;
+    cursor: pointer;
+    border:1px solid black
+    
+}
+.share button:hover {
+    color: white;
+    background-color: black;
+}
+.hr {
+    border:none; /*기존의 선 지움*/
+    height: 1px; /*선의 두께 지정 없으면 안 보임*/
+    background-color: #cccccc; /*선의 색 지정*/
+}
