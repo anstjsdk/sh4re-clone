@@ -27,3 +27,21 @@
     height: 1px; /*선의 두께 지정 없으면 안 보임*/
     background-color: #cccccc; /*선의 색 지정*/
 }
+
+@media screen and (max-width: 768px) {
+    #page-header {
+        flex-direction: row;/*가로정렬유지*/
+        justify-content: space-between;/*요소들을 양쫏으로 띄움*/
+    }
+    .logout,.share button {
+        display: none;
+    }
+    .detail {
+                position: absolute;/*left,right,top등으로 자유롭게 위치선정*/
+                right: 20px;
+                top: 10px;
+            }
+    .fi fi-br-exit {
+        display: block;
+    }
+}
