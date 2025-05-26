@@ -45,3 +45,36 @@
         display: block;
     }
 }
+.list {
+  position: absolute;
+  top: 150px;  /* 페이지에서 적절히 조정 */
+  right: 20px;
+}
+@media screen and (max-width:768px){
+    .list{
+        position: static;
+        margin-top: 20px;
+    }
+}
+.list-items {
+     margin:20px;
+     display: flex;
+     justify-content: space-between;
+}
+.select-btn:hover{
+    color: white;
+    background-color: rgb(56, 139, 222);
+}
+.select-btn {
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    padding:6px
+}
+.code-share {
+    color: white;
+    background-color:rgb(56, 139, 222) ;
+    width: 400px;
+   height: 30px;
+   border:none;
+   border-radius: 10px;
+}
