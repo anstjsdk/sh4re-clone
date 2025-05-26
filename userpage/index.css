@@ -1,0 +1,58 @@
+body {
+  height: 100vh;
+  padding: 0;
+  margin: 0;
+}
+.header-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  border-bottom: 1px solid #e0e0e0;
+  box-sizing: border-box;
+  padding: 20px 60px;
+}
+.detail {
+  display: flex;
+  gap: 12px;
+}
+.btn button {
+  border-radius: 25px;
+  background-color: white;
+  color: black;
+}
+@media screen and (max-width: 786px) {
+  .header-box {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .btn button,
+  .logout {
+    display: none;
+  }
+  .detail {
+    position: absolute;
+    right: 20px;
+  }
+}
+.school-name {
+    display: flex;
+    flex-direction: column;
+    font-size: 2rem;
+}
+main .user-info {
+    display: flex;
+    flex-direction: column;
+    margin: 0%;
+    padding: 20px 60px;
+}
+.name {
+    color:#ccc;
+}
+.bar {
+    align-self: center;
+    width:95%;
+    height: 0;
+    border-bottom: 1px solid #e0e0e0;
+}
+
