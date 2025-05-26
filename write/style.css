@@ -1,0 +1,103 @@
+body {
+  height: 100vh;
+}
+#page-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; /*위아래 간견 조절*/
+  padding: 10px 20px;
+}
+.detail {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.share button {
+  border-radius: 25px;
+  padding: 8px;
+  background-color: white;
+  padding: 8px 20px;
+  cursor: pointer;
+  border: 1px solid black;
+}
+.share button:hover {
+  color: white;
+  background-color: black;
+}
+
+.hr {
+  border: none; /*기존의 선 지움*/
+  height: 1px; /*선의 두께 지정 없으면 안 보임*/
+  background-color: #cccccc; /*선의 색 지정*/
+}
+
+@media screen and (max-width: 768px) {
+  #page-header {
+    flex-direction: row; /*가로정렬유지*/
+    justify-content: space-between; /*요소들을 양쫏으로 띄움*/
+  }
+  .logout,
+  .share button {
+    display: none;
+  }
+  .detail {
+    position: absolute; /*left,right,top등으로 자유롭게 위치선정*/
+    right: 20px;
+    top: 10px;
+  }
+  .fi fi-br-exit {
+    display: block;
+  }
+}
+.list {
+  position: absolute;
+  top: 150px; /* 페이지에서 적절히 조정 */
+  right: 20px;
+}
+@media screen and (max-width: 768px) {
+  .list {
+    position: static;
+    margin-top: 20px;
+  }
+}
+.title-box {
+  width: 65vw;
+  height: 7vh;
+  box-sizing: border-box;
+}
+
+.code-input {
+  width: 65vw;
+  height: 70vh;
+  box-sizing: border-box;
+  background-color: #282C34;
+}
+
+.list-items {
+  margin: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+.select-btn:hover {
+  color: white;
+  background-color: rgb(56, 139, 222);
+}
+.select-btn:focus {
+  color: white;
+  background-color: rgb(56, 139, 222);
+}
+.select-btn {
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  padding: 6px;
+  cursor: pointer;
+}
+.code-share {
+  color: white;
+  background-color: rgb(56, 139, 222);
+  width: 400px;
+  height: 30px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
