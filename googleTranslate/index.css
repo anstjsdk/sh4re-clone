@@ -20,14 +20,31 @@ body {
     display: flex;
     align-items: center; /*세로 가운데 정렬*/
     gap:12px; /*요소사이간격*/
+    size: 20px;
 }
 /*오른쪽 아이콘 영역 (설정 + 앱 + 프로필*/
 .detail {
     display: flex;
     align-items: center; /*세로 가운데 정렬*/
     gap:20px; /*요소사이간격*/
+    size: 20px;
 }
 .left-header h4 {
     margin: 0; /*여백제거*/
     font-size: 20px;
+}
+.menu {
+    display: flex;
+    gap: 12px;
+    padding-left: 50px;
+    padding-top: 10px;
+    background-color: white;
+}
+.menu button {
+    border: 1px solid #0d19ef;
+    border-radius: 7px;
+    padding: 8px 17px;
+    color:#0d19ef
+
+    
 }
