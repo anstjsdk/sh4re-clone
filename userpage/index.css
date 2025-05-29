@@ -55,4 +55,8 @@ main .user-info {
     height: 0;
     border-bottom: 1px solid #e0e0e0;
 }
+.written-code-text,.written-code-box {
+    font-size: 1.5rem;
+    padding: 20px 60px;
+}
 
